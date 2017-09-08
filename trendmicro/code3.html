@@ -1,0 +1,37 @@
+<div id="task">
+      <h2 class="mod-hidden">Task description</h2>
+      <div id="task_description" class="">
+        <div id="standard_task_description"><div data-reactroot="" class="protected"><div class="task-description-content">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<div id="brinza-task-description">
+<p>You are given two passages of text that have been scanned and passed through OCR software. (OCR stands for Optical Character Recognition, which is the conversion of printed text into machine-readable strings.) Unfortunately, the scans were of poor quality and some letters were not recognized by the OCR software. Write a program to check (based on the output from the OCR software) whether the two text sources might in fact be the same.</p>
+<p>We assume that each text passage consists only of English letters. The OCR output from each scan is given as a string in which unrecognized letters are marked as follows. Firstly, let us mark each unrecognized letter by "<tt style="white-space:pre-wrap">?</tt>". For example, if the OCR software didn't recognize the second and third letters of the text "<tt style="white-space:pre-wrap">AppLe</tt>", it would result in OCR output of "<tt style="white-space:pre-wrap">A??Le</tt>". Then, for brevity, every group of K consecutive "<tt style="white-space:pre-wrap">?</tt>" characters is replaced by the decimal representation of integer K (without leading zeros). Thus, the above OCR result would be represented as "<tt style="white-space:pre-wrap">A2Le</tt>". (For the sake of clarity, such numeric replacement is performed on groups of "<tt style="white-space:pre-wrap">?</tt>" characters that cannot be extended either to the left or to the right.)</p>
+<p>You are given two strings S and T consisting of N and M characters, respectively, and you would like to check whether they might have been obtained as OCR scans of the same text. For example, both strings "<tt style="white-space:pre-wrap">A2Le</tt>" and "<tt style="white-space:pre-wrap">2pL1</tt>" could have been obtained as scans of the word "<tt style="white-space:pre-wrap">AppLe</tt>" (but also as scans of the word "<tt style="white-space:pre-wrap">AmpLe</tt>"). Both strings "<tt style="white-space:pre-wrap">a10</tt>" and "<tt style="white-space:pre-wrap">10a</tt>" could have been obtained as scans of the word "<tt style="white-space:pre-wrap">abbbbbbbbba</tt>" (but also from many other strings of length 11, starting and ending with "<tt style="white-space:pre-wrap">a</tt>").</p>
+<p>On the other hand, strings "<tt style="white-space:pre-wrap">ba1</tt>" and "<tt style="white-space:pre-wrap">1Ad</tt>" could not have been obtained from the same text, since the second letter of each text is different.</p>
+<p>Write a function:</p>
+<blockquote><p style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>def solution(S, T)</tt></p></blockquote>
+<p>that, given two strings S and T consisting of N and M characters, respectively, determines whether strings S and T can be obtained as OCR output from the same text.</p>
+<p>For example, given "<tt style="white-space:pre-wrap">A2Le</tt>" and "<tt style="white-space:pre-wrap">2pL1</tt>", your function should return <tt style="white-space:pre-wrap">True</tt>, as explained above. Given "<tt style="white-space:pre-wrap">a10</tt>" and "<tt style="white-space:pre-wrap">10a</tt>", your function should return <tt style="white-space:pre-wrap">True</tt>, as explained above. Given "<tt style="white-space:pre-wrap">ba1</tt>" and "<tt style="white-space:pre-wrap">1Ad</tt>", your function should return <tt style="white-space:pre-wrap">False</tt>, as explained above. Given "<tt style="white-space:pre-wrap">3x2x</tt>" and "<tt style="white-space:pre-wrap">8</tt>", your function should return <tt style="white-space:pre-wrap">False</tt>, since they represent strings of different length.</p>
+<p>Assume that:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>N and M are integers within the range [<span class="number">1</span>..<span class="number">100,000</span>];</li>
+<li>lengths of texts before the OCR process are integers within the range [1..100,000];</li>
+<li>strings S and T consist only of alphanumerical characters (<tt style="white-space:pre-wrap">a</tt>−<tt style="white-space:pre-wrap">z</tt> and/or <tt style="white-space:pre-wrap">A</tt>−<tt style="white-space:pre-wrap">Z</tt> and/or <tt style="white-space:pre-wrap">0</tt>−<tt style="white-space:pre-wrap">9</tt>);</li>
+<li>strings S and T contain neither single zeros (e.g. "<tt style="white-space:pre-wrap">abc0abc</tt>") nor integers with leading zeros (e.g. "<tt style="white-space:pre-wrap">abc012abc</tt>").</li>
+</ul>
+</blockquote><p>In your solution, focus on <b><b>correctness</b></b>. The performance of your solution will not be the focus of the assessment.</p>
+</div>
+<div style="margin-top:5px">
+<small>Copyright 2009–2017 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.</small>
+</div>
+
+</div></div></div>
+      </div>
+
+      <div class="under-task">
+        <div id="test_cases_area" class=""><div data-reactroot=""><ul class="test-case-list"></ul><div class="add-test-case test-case-row" tabindex="0"><div class="wide"><span class="title">Custom test cases</span><span class="case-format">format: ('A2Le', '2pL1')</span></div><div class="right counter"><!-- react-text: 8 -->0<!-- /react-text --><!-- react-text: 9 -->/<!-- /react-text --><!-- react-text: 10 -->10<!-- /react-text --></div><div class="right plus"><img src="/static/img/cui/add.png"></div></div></div></div>
+        <div id="accessible_test_cases_area"></div>
+      </div>
+    </div>
